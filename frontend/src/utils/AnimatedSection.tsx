@@ -17,7 +17,7 @@ const AnimatedSection = ({ children, delay = 0 }: AnimatedSection) => {
   });
 
   const variants: Variants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, y: 40 },
     spring: {
       opacity: 1,
       y: 0,

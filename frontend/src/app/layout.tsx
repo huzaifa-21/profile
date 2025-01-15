@@ -1,14 +1,31 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Outfit, Spicy_Rice,Rubik_Glitch,Pattaya } from "next/font/google";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"
+import Header from "@/components/Header";
 config.autoAddCss = false
 
 const outfit = Outfit({
   subsets: ["latin"],
   display: "block",
 });
+
+
+const spicyRice = Spicy_Rice({
+  subsets: ["latin"],
+  weight: "400", // Spicy Rice has only one weight
+});
+
+const pattaya = Pattaya({
+  subsets: ["latin"],
+  weight:["400"]
+})
+
+const rubikGlitch = Rubik_Glitch({
+  subsets: ["latin"],
+  weight:["400"]
+})
 
 export const metadata: Metadata = {
   title: "Huzaifa Ali",
@@ -32,6 +49,7 @@ export default function RootLayout({
       <body
         className={`${outfit.className} selection:text-secondaryColor bg-backgroundColor`}
       >
+        <Header />
         {children}
       </body>
     </html>

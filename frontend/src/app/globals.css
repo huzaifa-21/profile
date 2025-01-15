@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply p-2 px-4 bg-gradient-to-r from-secondaryColor to-altSecondaryColor text-backgroundColor duration-300 font-medium hover:bg-altSecondaryColor rounded-md hover:animate-pulse hover:scale-105 font-semibold
+    @apply p-2 px-4 bg-gradient-to-r from-secondaryColor to-altSecondaryColor text-backgroundColor duration-300 hover:bg-altSecondaryColor rounded-md hover:animate-pulse hover:scale-105 font-semibold shadow-emerald-300 shadow-2xl 
   }
 }
 
@@ -19,8 +19,12 @@
     --foreground: #ededed;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: var(--foreground);
   background: var(--background);
+  scroll-behavior: smooth;
+  /* scroll-snap-type: y mandatory; */
 }

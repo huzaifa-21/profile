@@ -9,17 +9,17 @@ import Image from "next/image";
 
 const Landing = () => {
   return (
-    <div className="landing-page flex gap-10 items-center justify-between container mx-auto py-32 ">
+    <section className="landing-page flex gap-10 items-center justify-between container mx-auto py-28 " id="home">
       <div className="info">
         <div className="name-title">
           <div className="name text-6xl font-semibold ">
-            <WavyText text="Huzaifa Ali" duration={0.1} />
+            <WavyText text="Huzaifa Ali"  />
           </div>
           <div className="job-title text-2xl">
-            <WavyText text="Front-End Developer" delay={1.5} />
+            <WavyText text="Front-End Developer" delay={.3} />
           </div>
         </div>
-        <AnimatedSection delay={2}>
+        <AnimatedSection delay={1}>
           <div className="description max-w-lg text-paragrahColor my-4 leading-relaxed text-lg">
             Welcome to my digital playground! I specialize in crafting visually
             stunning and user-friendly web experiences. From clean code to
@@ -27,7 +27,7 @@ const Landing = () => {
             reality. Let's build something amazing together!
           </div>
         </AnimatedSection>
-        <AnimatedSection delay={1.4}>
+        <AnimatedSection delay={.6}>
           <div className="links mt-10 flex gap-2">
             {[
               { icon: faFacebookF, href: "https://www.facebook.com/7ozifaaa/" },
@@ -42,6 +42,7 @@ const Landing = () => {
                 <a
                   href={link.href}
                   key={index}
+                  aria-label="social-link"
                   className="relative group overflow-hidden before:rounded-full before:absolute before:duration-300  before:w-0 before:h-0 before:bg-secondaryColor hover:before:w-full hover:before:h-full p-4 grid place-items-center border-secondaryColor border-4 rounded-full w-20 h-20"
                   target="blank"
                 >
@@ -54,7 +55,7 @@ const Landing = () => {
             })}
           </div>
         </AnimatedSection>
-        <AnimatedSection delay={1}>
+        <AnimatedSection delay={.2}>
           <a
             href="/Huzaifa Ali.pdf"
             download="Huzaifa Ali.pdf"
@@ -65,7 +66,7 @@ const Landing = () => {
         </AnimatedSection>
       </div>
       <div className="my-pic">
-        <AnimatedSection>
+        <AnimatedSection delay={.7}>
           <Image
             src={"/portfolio.jpeg"}
             alt="my image"
@@ -74,7 +75,7 @@ const Landing = () => {
           />
         </AnimatedSection>
       </div>
-    </div>
+    </section>
   );
 };
 

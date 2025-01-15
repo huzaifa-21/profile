@@ -8,6 +8,7 @@ interface Props extends HTMLMotionProps<"div"> {
   delay?: number;
   replay?: boolean;
   duration?: number;
+  center?: boolean;
 }
 
 const WavyText: FC<Props> = ({
@@ -15,13 +16,14 @@ const WavyText: FC<Props> = ({
   delay = 0,
   duration = 0.05,
   replay = true,
+  center = false,
   ...props
 }: Props) => {
   const controls = useAnimation();
 
   // Use `useInView` hook to trigger when the element is in view
   const [ref, inView] = useInView({
-    threshold: 0, // Adjust the threshold if necessary
+    threshold: 1, // Adjust the threshold if necessary
     triggerOnce: false, // Set this to true if you want the animation to trigger only once
   });
 
@@ -71,7 +73,11 @@ const WavyText: FC<Props> = ({
   return (
     <motion.h1
       ref={ref}
-      style={{ display: "flex", overflow: "hidden" }}
+      style={{
+        display: "flex",
+        overflow: "hidden",
+        justifyContent: center ? "center" : "initial",
+      }}
       variants={container}
       initial="hidden"
       animate={controls} // Using the animation controls to manage the animation state

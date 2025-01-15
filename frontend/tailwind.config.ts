@@ -19,10 +19,15 @@ export default {
 
     extend: {
       backgroundImage: {
-        landing: "url('/blurry.svg')",
+        landing: "url('/wave.svg')",
       },
-      keyframes: {},
-      animation: {},
+      fontFamily: {
+        header: ["pattaya", "sans-serif"],
+      },
+      boxShadow: {
+        "main-shadow":
+          "inset 0 0 12px -5px rgb(5 153 137 / 82%), 0px 0px 1px 0px rgb(0 108 96), -1px 0px 5px 0px rgb(0 108 96)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
