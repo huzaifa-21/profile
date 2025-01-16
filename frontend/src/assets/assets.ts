@@ -14,6 +14,13 @@ import tailwind from "./images/tailwind.svg";
 import typescript from "./images/typescript.svg";
 import next from "./images/next.svg";
 import css from "./images/css.svg";
+import portfolio from "./images/portfolio.png";
+import rock from "./images/rock.png";
+import easybank from "./images/easybank.png";
+import blackdantella from "./images/blackdantella.png";
+import fylo from "./images/fylo.png";
+import dashboard from "./images/dashboard.png";
+import email from "./images/email.png";
 import { Project } from "@/types/projects";
 
 const links: Link[] = [
@@ -40,6 +47,14 @@ const links: Link[] = [
 ];
 
 const skills: skill[] = [
+  {
+    title: "HTML",
+    image: html,
+    description:
+      "HTML is the cornerstone of web development, serving as the backbone for creating structured and interactive web pages.",
+    link: "https://developer.mozilla.org/en-US/docs/Learn/HTML",
+    alt: "Skill Image",
+  },
   {
     title: "HTML",
     image: html,
@@ -161,68 +176,67 @@ const skills: skill[] = [
 
 const projects: Project[] = [
   {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
+    image: portfolio,
+    title: "Portfolio",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
+    link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
     date: "20 may 2024",
+    skills: ["react.js", "tailwind", "typescript", "next.js", "node.js"],
   },
   {
-    image: "video/rock-game.mov",
+    image: blackdantella,
+    title: "Blackdantella E-commerce",
+    description:
+      "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
+    link: "https://blackdantella.com",
+    date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
+  },
+  {
+    image: easybank,
     title: "Easybank",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/bank-landing-page/",
     date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
   },
   {
-    image: "video/rock-game.mov",
+    image: rock,
     title: "Rock-Paper-Scissor Game",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
     date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
   },
   {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
+    image: fylo,
+    title: "Fylo Landing Page",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
+    link: "https://huzaifa-21.github.io/Fylo-page/",
     date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
   },
   {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
+    image: dashboard,
+    title: "Dashboard",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
+    link: "https://huzaifa-21.github.io/dashboard/",
     date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
   },
   {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
+    image: email,
+    title: "Email Subscription",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
+    link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
     date: "20 may 2024",
-  },
-  {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
-    description:
-      "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
-    date: "20 may 2024",
-  },
-  {
-    image: "video/rock-game.mov",
-    title: "Rock-Paper-Scissor Game",
-    description:
-      "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
-    date: "20 may 2024",
+    skills: ["html", "css", "javascript"],
   },
 ];
 
