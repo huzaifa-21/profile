@@ -40,6 +40,7 @@ const Contact = () => {
       setTimeout(() => {
         setSent(false);
       }, 3000);
+      
     }
   }
   // sendMail({name:"hello",email:"laskjdf",message:"a;lskdf;lkajsdf"})
