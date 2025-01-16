@@ -13,20 +13,15 @@ const outfit = Outfit({
 });
 
 
-const spicyRice = Spicy_Rice({
-  subsets: ["latin"],
-  weight: "400", // Spicy Rice has only one weight
-});
+
 
 const pattaya = Pattaya({
   subsets: ["latin"],
   weight:["400"]
 })
 
-const rubikGlitch = Rubik_Glitch({
-  subsets: ["latin"],
-  weight:["400"]
-})
+
+
 
 export const metadata: Metadata = {
   title: "Huzaifa Ali",
@@ -48,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} selection:text-secondaryColor bg-backgroundColor`}
+        className={` ${pattaya.className}${outfit.className} selection:text-secondaryColor bg-backgroundColor`}
       >
         <Navbar />
         {children}
