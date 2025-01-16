@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import SectionHead from "./SectionHead";
-import { InputHTMLAttributes, useState } from "react";
+import {  useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import AnimatedSection from "@/utils/AnimatedSection";

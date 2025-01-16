@@ -15,7 +15,6 @@ const WavyText: FC<Props> = ({
   text,
   delay = 0,
   duration = 0.05,
-  replay = true,
   center = false,
   ...props
 }: Props) => {
