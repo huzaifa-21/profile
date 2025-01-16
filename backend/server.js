@@ -10,7 +10,10 @@ const app = e();
 const port = process.env.PORT || 5500;
 
 // App Middleware
-const allowedOrigins = ["http://localhost:3000", process.env.FRONTEND_URL];
+const allowedOrigins = [
+  "http://localhost:3000", // For local development
+  "https://huzaifa-alii.vercel.app", // Your deployed frontend
+];
 
 app.use(
   cors({
@@ -23,6 +26,8 @@ app.use(
     },
   })
 );
+
+app.options("*", cors()); // Allow preflight for all routes
 
 app.use(json());
 
