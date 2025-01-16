@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Spicy_Rice,Rubik_Glitch,Pattaya } from "next/font/google";
+import { Outfit,Pattaya } from "next/font/google";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"

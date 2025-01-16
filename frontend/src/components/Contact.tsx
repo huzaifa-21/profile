@@ -1,13 +1,14 @@
 "use client";
 import axios from "axios";
 import SectionHead from "./SectionHead";
-import { useState } from "react";
+import { InputHTMLAttributes, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import AnimatedSection from "@/utils/AnimatedSection";
+import { Form } from "@/types/form";
 
 const Contact = () => {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<Form>({
     name: "",
     email: "",
     message: "",
@@ -15,7 +16,7 @@ const Contact = () => {
 
   const [sent, setSent] = useState(false);
 
-  const hanldeChange = (e: any) => {
+  const hanldeChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const value: string = e.target.value;
     const name: string = e.target.name;
 
@@ -40,7 +41,7 @@ const Contact = () => {
       setTimeout(() => {
         setSent(false);
       }, 3000);
-      
+
     }
   }
   // sendMail({name:"hello",email:"laskjdf",message:"a;lskdf;lkajsdf"})
