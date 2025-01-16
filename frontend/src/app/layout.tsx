@@ -3,7 +3,8 @@ import { Outfit, Spicy_Rice,Rubik_Glitch,Pattaya } from "next/font/google";
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"
-import Header from "@/components/Header";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 config.autoAddCss = false
 
 const outfit = Outfit({
@@ -49,8 +50,9 @@ export default function RootLayout({
       <body
         className={`${outfit.className} selection:text-secondaryColor bg-backgroundColor`}
       >
-        <Header />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

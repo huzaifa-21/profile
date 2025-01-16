@@ -56,14 +56,6 @@ const skills: skill[] = [
     alt: "Skill Image",
   },
   {
-    title: "HTML",
-    image: html,
-    description:
-      "HTML is the cornerstone of web development, serving as the backbone for creating structured and interactive web pages.",
-    link: "https://developer.mozilla.org/en-US/docs/Learn/HTML",
-    alt: "Skill Image",
-  },
-  {
     title: "CSS",
     image: css,
     description:
@@ -181,8 +173,15 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
-    date: "20 may 2024",
-    skills: ["react.js", "tailwind", "typescript", "next.js", "node.js"],
+    date: "September 2024",
+    skills: [
+      "react.js",
+      "tailwind",
+      "typescript",
+      "next.js",
+      "node.js",
+      "express.js",
+    ],
   },
   {
     image: blackdantella,
@@ -190,8 +189,17 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://blackdantella.com",
-    date: "20 may 2024",
-    skills: ["html", "css", "javascript"],
+    date: " august 2024",
+    skills: [
+      "reactJs",
+      "sass",
+      "javascript",
+      "express",
+      "mongoDB",
+      "node.js",
+      "bootstrap",
+      "responsive Design",
+    ],
   },
   {
     image: easybank,
@@ -199,8 +207,8 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/bank-landing-page/",
-    date: "20 may 2024",
-    skills: ["html", "css", "javascript"],
+    date: "june 2024",
+    skills: ["html", "css", "javascript", "bootstrap", "responsive Design"],
   },
   {
     image: rock,
@@ -208,8 +216,8 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/rock-paper-scissors-game/",
-    date: "20 may 2024",
-    skills: ["html", "css", "javascript"],
+    date: "october 2023",
+    skills: ["html", "sass", "javascript"],
   },
   {
     image: fylo,
@@ -217,8 +225,8 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/Fylo-page/",
-    date: "20 may 2024",
-    skills: ["html", "css", "javascript"],
+    date: " may 2023",
+    skills: ["html", "css", "javascript","bootstrap","responsive Design"],
   },
   {
     image: dashboard,
@@ -226,8 +234,8 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/dashboard/",
-    date: "20 may 2024",
-    skills: ["html", "css", "javascript"],
+    date: "july 2023",
+    skills: ["html", "css","responsive design"],
   },
   {
     image: email,
@@ -235,7 +243,7 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
-    date: "20 may 2024",
+    date: "Novemeber 2023",
     skills: ["html", "css", "javascript"],
   },
 ];

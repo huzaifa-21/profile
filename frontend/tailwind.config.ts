@@ -19,7 +19,7 @@ export default {
 
     extend: {
       backgroundImage: {
-        landing: "url('/wave.svg')",
+        wave: "url('/wave.svg')",
       },
       fontFamily: {
         header: ["pattaya", "sans-serif"],

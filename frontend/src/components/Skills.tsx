@@ -1,20 +1,18 @@
 import { skills } from "@/assets/assets";
 import { skill } from "@/types/skills";
 import AnimatedSection from "@/utils/AnimatedSection";
-import WavyText from "@/utils/WaveText";
 import Image from "next/image";
+import SectionHead from "./SectionHead";
 
 const Skills = () => {
   return (
     <section className="skills py-24 " id="skills">
-      <div className="text-8xl opacity-20  py-12 font-header font-normal ">
-        <WavyText text="Skills" center={true} delay={0.2} duration={0.1} />
-      </div>
+      <SectionHead text="Skills" />
       <div className="skills-holder flex flex-wrap container mx-auto">
         {skills.map((skill: skill, index) => {
           return (
             <div
-              className="px-2 skill-holder  w-1/2  sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 mx-auto "
+              className="px-2 skill-holder w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 mx-auto "
               key={index}
             >
               <AnimatedSection>

@@ -1,24 +1,22 @@
 import { projects } from "@/assets/assets";
 import { Project } from "@/types/projects";
 import AnimatedSection from "@/utils/AnimatedSection";
-import WavyText from "@/utils/WaveText";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons/faGlobe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import SectionHead from "./SectionHead";
 
 const Projects = () => {
   return (
     <section className="py-28 " id="projects">
-      <div className="text-8xl opacity-20  py-12 font-header font-normal ">
-        <WavyText text="Projects" center={true} delay={0.2} duration={0.1} />
-      </div>
+      <SectionHead text="Projects"/>
       <div className="container mx-auto">
-        <div className="project-holder grid grid-cols-2 gap-8">
-          {projects.map((project: Project, index) => {
+        <div className="project-holder grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project: Project, index = 1) => {
             const isTallBox = index % 2 === 0;
             return (
               <div
-                className={`${isTallBox ? "row-span-2 " : "row-span-1 mt-5"} `}
+                className={`${isTallBox ? "row-span-1 mt-5 md:mt-0 md:row-span-2 " : "row-span-1 mt-5"} `}
                 key={index}
               >
                 <AnimatedSection>
@@ -28,7 +26,7 @@ const Projects = () => {
                       alt="project image"
                       className="rounded-ss-lg rounded-se-lg duration-300 group-hover:scale-105 group-hover:animate-pulse"
                     />
-                    <div className="info p-5 absolute flex flex-col justify-end gap-2   bg-gradient-to-t from-slate-700 h-80 w-full duration-300 -bottom-52 group-hover:bottom-0">
+                    <div className="info p-5 absolute flex flex-col justify-end gap-2   bg-gradient-to-t from-slate-700 h-80 w-full duration-300 -bottom-60 group-hover:bottom-0">
                       <div className="project-title text-white flex justify-between items-center ">
                         <h5 className="font-semibold text-xl">
                           {project.title}
@@ -41,7 +39,7 @@ const Projects = () => {
                         {project.skills.map((skill: string, index: number) => {
                           return (
                             <span
-                              className="skill p-1 px-4 bg-slate-700 capitalize text-sm rounded-3xl"
+                              className="skill p-1 px-4 bg-slate-700 capitalize text-sm rounded-3xl duration-300 hover:text-secondaryColor hover:shadow-lg hover:shadow-secondaryColor cursor-default"
                               key={index}
                             >
                               {skill}

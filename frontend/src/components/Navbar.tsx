@@ -1,9 +1,8 @@
-import AnimatedSection from "@/utils/AnimatedSection";
 import Image from "next/image";
 import Navigation from "./Navigation";
 import WavyText from "@/utils/WaveText";
 
-const Header = () => {
+const Navbar = () => {
 
   return (
     <header className=" z-50 sticky top-0 bg-backgroundColor">
@@ -19,4 +18,4 @@ const Header = () => {
     </header>
   );
 };
-export default Header;
+export default Navbar;
