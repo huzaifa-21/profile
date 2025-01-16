@@ -10,7 +10,20 @@ const app = e();
 const port = process.env.PORT || 5500;
 
 // App Middleware
-app.use(cors({origin:"http://localhost:3000"}));
+const allowedOrigins = ["http://localhost:3000", process.env.FRONTEND_URL];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+  })
+);
+
 app.use(json());
 
 // nodemailer endpoint
