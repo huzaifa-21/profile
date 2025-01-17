@@ -173,7 +173,7 @@ const projects: Project[] = [
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
-    date: "September 2024",
+    date: "december 2024",
     skills: [
       "react.js",
       "tailwind",
