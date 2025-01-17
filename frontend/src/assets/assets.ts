@@ -172,7 +172,7 @@ const projects: Project[] = [
     title: "Portfolio",
     description:
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
-    link: "https://huzaifa-21.github.io/frontendmentor-challenge/",
+    link: "https://huzaifa-alii.vercel.app/",
     date: "december 2024",
     skills: [
       "react.js",
@@ -226,7 +226,7 @@ const projects: Project[] = [
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/Fylo-page/",
     date: " may 2023",
-    skills: ["html", "css", "javascript","bootstrap","responsive Design"],
+    skills: ["html", "css", "javascript", "bootstrap", "responsive Design"],
   },
   {
     image: dashboard,
@@ -235,7 +235,7 @@ const projects: Project[] = [
       "Crafted with <b>HTML</b>, <b>SASS</b> and <b>JavaScript</b>, this interacDve game elevated my skills, parDcularly in SASS where I utilized mixins to style the disDnct shapes of rock, paper, and scissors efficiently.",
     link: "https://huzaifa-21.github.io/dashboard/",
     date: "july 2023",
-    skills: ["html", "css","responsive design"],
+    skills: ["html", "css", "responsive design"],
   },
   {
     image: email,
