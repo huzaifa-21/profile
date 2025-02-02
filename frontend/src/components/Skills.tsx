@@ -4,26 +4,6 @@ import AnimatedSection from "@/utils/AnimatedSection";
 import Image from "next/image";
 import SectionHead from "./SectionHead";
 
-const users = [
-  {
-    name: "huzaifa",
-    age: 23,
-    role: "user",
-    address: {
-      country: "sudan",
-      city: "khartoum",
-    },
-  },
-  {
-    name: "mohammed",
-    age: 23,
-    role: "user",
-    address: {
-      country: "sudan",
-      city: "om durman",
-    },
-  },
-];
 
 const Skills = () => {
   return (
