@@ -4,6 +4,27 @@ import AnimatedSection from "@/utils/AnimatedSection";
 import Image from "next/image";
 import SectionHead from "./SectionHead";
 
+const users = [
+  {
+    name: "huzaifa",
+    age: 23,
+    role: "user",
+    address: {
+      country: "sudan",
+      city: "khartoum",
+    },
+  },
+  {
+    name: "mohammed",
+    age: 23,
+    role: "user",
+    address: {
+      country: "sudan",
+      city: "om durman",
+    },
+  },
+];
+
 const Skills = () => {
   return (
     <section className="skills py-24 " id="skills">
@@ -12,7 +33,7 @@ const Skills = () => {
         {skills.map((skill: skill, index) => {
           return (
             <div
-              className="px-2 skill-holder w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 mx-auto "
+              className="px-2  skill-holder w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 mx-auto  "
               key={index}
             >
               <AnimatedSection>

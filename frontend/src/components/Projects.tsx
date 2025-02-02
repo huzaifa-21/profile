@@ -47,10 +47,10 @@ const Projects = () => {
                           );
                         })}
                       </div>
-                      <a href={project.link} target="blank" aria-label="project link">
+                      <a href={project.link} target="blank" aria-label="project link" className="w-fit">
                         <FontAwesomeIcon
                           icon={faGlobe}
-                          className="text-2xl text-secondaryColor animate-pulse"
+                          className="text-2xl text-secondaryColor animate-pulse "
                         />
                       </a>
                     </div>
