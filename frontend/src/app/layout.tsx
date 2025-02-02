@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Outfit,Pattaya } from "next/font/google";
+import { Outfit, Pattaya } from "next/font/google";
+import {Analytics} from "@vercel/analytics/next"
 import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css"
@@ -12,16 +13,10 @@ const outfit = Outfit({
   display: "block",
 });
 
-
-
-
 const pattaya = Pattaya({
   subsets: ["latin"],
   weight:["400"]
 })
-
-
-
 
 export const metadata: Metadata = {
   title: "Huzaifa Ali",
@@ -47,6 +42,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
